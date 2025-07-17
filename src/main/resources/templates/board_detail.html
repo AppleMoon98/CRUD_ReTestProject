@@ -1,0 +1,11 @@
+<html layout:decorate="~{layout}">
+<div layout:fragment="content" class="container my-3">
+	<div class="card">
+		<h2 class="card-header" th:text="${board.subject}"></h2>
+		<div class="d-flex justify-content-end mt-2 mx-2" th:text="${board.createDate}"></div>
+		<div class="card-body" th:text="${board.content}"></div>
+	</div>
+	
+	<a type="submit" class="btn btn-primary mt-3" href="/">돌아가기</a>
+</div>
+</html>
